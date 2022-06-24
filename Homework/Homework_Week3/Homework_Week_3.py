@@ -57,16 +57,16 @@ shopping_list = [
 	"long-grain rice",
 	"cheese board",
 ]
-Print(shopping_list[0]
+print(shopping_list[0])
 
 
 # Question 2
 
 chocolates = {
 
-   'white': 1.50,
-
    'milk': 1.20,
+
+   'white': 1.50,
 
    'dark': 1.80,
 
