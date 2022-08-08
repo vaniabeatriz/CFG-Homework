@@ -1,0 +1,137 @@
+﻿HOMEWORK WEEK 5-6 
+(handout for students) 
+TASK 1 (Agile Techniques) 
+Question 1 
+Complete definitions for Scrum related key terminology provided below. SCRUM CEREMONIES 
+· Product backlog refinement 
+
+
+Product Backlog Refinement or PBR is the action of adding detail, estimate and revise the items in the Product Backlog. It is an ongoing process where the Product Owner and the Development Team collaborate.
+
+
+· Sprint planning. 
+
+
+A sprint planning is a meeting that is dedicated to planning the next sprint. This resulting plan is created by the collaborative work of the team.
+· Daily scrum. 
+Also known as Daily standup, It's a short daily meeting designed to let the team plan out its work for the day and identify any obstacles that could impact that work.
+· Sprint review. 
+During the sprint review, the team evaluates the project against the sprint goal defined during the sprint planning meeting.
+· Sprint retrospective 
+It is a post-sprint meeting. The team reviews what happened during the sprint to talk about what worked, what didn’t work, and how they can improve the process during the next sprint.
+SCRUM ROLES 
+· ScrumMaster 
+Scrum Master Is the person who ensures the scrum framework is followed.
+· Product Owner 
+A product owner is a person who develops the product features and goals, create product backlog items based on product goals, order product backlog items, and ensures that the product backlog is visible and comprehended.
+· Development Team. 
+
+
+A development team is a group of people that work together to create software.
+Question 2 
+You are leading a development team that was given a task to create a new yoga booking system.
+High level description of the system is as follows: 
+· It has a very simple interface to accept user input (bookings) and display classes information 
+· All bookings, appointments, schedules etc should be stored in a SQL database. 
+· There is a ‘backend’ system that should be written in Python to handle the logic and manage the data flow. 
+Your team has two weeks to build a simple prototype that will be shown to the client to seek their feedback and discuss further enhancements. 
+TASK 
+· Break this task into smaller stories (chunks of work) for the team to work on. 
+· Assume that one person works on one task. 
+· Mark tasks that can be worked on in parallel and perhaps those that need to be worked on in particular order. 
+
+
+User Story - Login
+As a user I want to be able to login in the app so that I can securely access my bookings
+Acceptance criteria:
+Given I am a user
+When I enter my credential details (email and password)
+And hit the login button
+Then I should be able to access my bookings
+Task - Develop the frontend login page
+Task - Develop the backend login service
+
+
+User Story - List available classes
+As a user I want to see all available classes so that I can book one
+Acceptance criteria:
+Given I am a user
+When I visit the classes pages
+Then I should be able to see all the classes available to book
+Task - Develop the frontend classes page
+Task - Develop the backend list classes service
+
+
+User Story - Book a class
+As a user I want to be able to book a class so that I can attend it
+Acceptance criteria:
+Given I am a logged user
+And I am at the list available classes page
+When I click on the Book button
+Then I should have the class booked
+And I should receive a confirmation email
+And I should be redirected to my booking page
+Task - Add the "Book this class" button on the available classes page
+Task - Implement the booking service
+
+
+
+
+User Story - List bookings
+As a user I want to be able to see all my bookings
+Acceptance criteria:
+Given I am a logged user
+When I visit the "my bookings" page
+Then I should be able to see all my booked classes
+Task - Develop the frontend my bookings page
+Task - Develop the backend list bookings service
+
+
+User Story - View booking details
+As a user I want to be able to see the detail of a particular booking
+Acceptance criteria:
+Given I am a logged user
+And I am on the "my bookings" page
+When I click on the "View class details" button
+Then I should be redirected to the class details page
+And I should be able to see the class location and time
+
+
+Task - Develop the frontend my booking details page
+Task - Develop the backend show booking service
+The number before the task represents the order they should be worked, tasks with the same number can be developed in parallel
+(1) Task - Develop the frontend login page
+(1) Task - Develop the backend login service
+(2) Task - Develop the frontend classes page
+(2) Task - Develop the backend list classes service
+(3) Task - Add the "Book this class" button on the available classes page
+(3) Task - Implement the booking service
+(3) Task - Develop the frontend my bookings page
+(3) Task - Develop the backend list bookings service
+(4) Task - Develop the frontend my booking details page
+(4) Task - Develop the backend show booking service
+
+
+TASK 2 (SQL) 
+Question 1 
+Design a cinema booking system. 
+Think how you would approach the problem and what are potential ways of solving it?
+You do not need to write actual code, but describe the high-level approach: · Draw a list of key requirements 
+1. Display the films available
+2. Display a calendar with a selection mode
+3. Display the sessions for the films  available on the chosen day
+4. Offer the option to book the session
+5. Collect user information
+6. Collect payment
+7. Send booking confirmation via email
+· What are your main considerations? 
+
+
+GDPR, Payment processing, Data encryption.
+· What would be your common or biggest problems? 
+Booking failure, Payment failure, Overbooking.
+· What components or tools would you potentially use? 
+Flask  for the Backend and Frontend;
+MySQL;
+Third party payment gateway for example, PayPal, Stripe etc.
+· You are welcome to draw a diagram (a very simple one) for the process flow to explain how it is going to work.
